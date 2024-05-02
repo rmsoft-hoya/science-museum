@@ -1,8 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Pretendard";
+
+  src: local("Pretendard"), url("../../styles/fonts/PretendardVariable.ttf") format("truetype"),
+    url("../../styles/fonts/PretendardVariable.woff2") format("woff2");
+  font-style: normal;
+}
 
 :root {
+  /* 흰색 */
+  --background: 0 0% 100%;
+  /* 짙은남색 (검은색) */
+  --foreground: 222.2 84% 4.9%;
+
+  /* 흰색 */
+  --card: 0 0% 100%;
+  /* 짙은남색 (검은색) */
+  --card-foreground: 222.2 84% 4.9%;
+
+  /* 흰색 */
+  --popover: 0 0% 100%;
+  /* 짙은남색 (검은색) */
+  --popover-foreground: 222.2 84% 4.9%;
+
+  /* 청록색(default) */
+  --primary: 187 94% 40%;
+  /* 흰색 */
+  --primary-foreground: 0 0% 100%;
+
+  /* 밝은회색 */
+  --secondary: 210 40% 96.1%;
+  /* 짙은남색 (검은색) */
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  /* 밝은회색 */
+  --muted: 210 40% 96.1%;
+  /* 푸른회색 */
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  /* 밝은회색 */
+  --accent: 210 40% 96.1%;
+  /* 짙은남색 (검은색) */
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  /* 붉은색 */
+  --destructive: 354 70% 54%;
+  /* 거의 흰색 */
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 213 27% 84%;
+  --input: 213 27% 84%;
+  --ring: 0, 0, 0;
+
+  --radius: 0.5rem;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,18 +69,27 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body,
+html,
+:root {
+  height: 100%;
+  font-synthesis: style !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#progress::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  border-radius: 250px;
+}
+#progress::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: default;
+  border-radius: 250px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+#progress::-webkit-scrollbar-track {
+  opacity: 0.3;
+  cursor: default;
+  border-radius: 250px;
 }
