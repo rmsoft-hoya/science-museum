@@ -1,0 +1,11 @@
+Model Information:
+* title:	謎の像
+* source:	https://sketchfab.com/3d-models/0cb678dc00fb4505a8ab3667e6619be1
+* author:	kazugoru (https://sketchfab.com/kazugoru)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "謎の像" (https://sketchfab.com/3d-models/0cb678dc00fb4505a8ab3667e6619be1) by kazugoru (https://sketchfab.com/kazugoru) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
