@@ -25,7 +25,7 @@ const DetailModal = () => {
         {/* 제목 */}
         <AlertDialogHeader className="flex">
           <div className="flex w-full items-center justify-center">
-            <AlertDialogTitle className="text-2xl font-bold">측우대(測雨臺)</AlertDialogTitle>
+            <AlertDialogTitle className="text-2xl font-bold">측우기와 측우대</AlertDialogTitle>
           </div>
         </AlertDialogHeader>
         {/* 내용 */}

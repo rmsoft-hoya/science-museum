@@ -5,6 +5,7 @@ import { Canvas, ThreeElements, extend, useFrame } from "@react-three/fiber";
 import { Cloud, Clouds, ContactShadows, Environment, GizmoHelper, GizmoViewport, Lightformer, OrbitControls, Sparkles, useGLTF } from "@react-three/drei";
 import { Stars } from "@react-three/drei";
 import * as THREE from "three";
+import Loading from "../main/components/Loading";
 
 function Box(props: ThreeElements["mesh"]) {
   const mesh: any = useRef<THREE.Mesh>(null!);
@@ -37,12 +38,6 @@ function Model({ url, position }: any) {
   return <primitive object={scene.clone()} ref={model} position={position} />;
 }
 
-// 로딩 이미지
-function LoadingSpinner() {
-  const { scene } = useGLTF("/3d/loading/loading.gltf");
-  return <primitive object={scene} scale={[5, 5, 5]} />;
-}
-
 export default function Test() {
   return (
     <div className="App w-full h-screen">
@@ -56,7 +51,7 @@ export default function Test() {
         <pointLight position={[20, 20, 20]} />
         <pointLight position={[-20, -20, -20]} intensity={1} />
 
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<Loading />}>
           <Model url={Models[0].url} position={Models[0].position} />
         </Suspense>
         {/* 이펙트 */}
