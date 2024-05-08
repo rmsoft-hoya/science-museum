@@ -14,7 +14,7 @@ const Mainpage = () => {
   };
 
   return (
-    <div className="min-w-[360px] w-full h-screen flex flex-col justify-center gap-[110px] items-center bg-[#0E1629]">
+    <div className="min-w-[360px] w-full h-screen flex flex-col justify-center  items-center bg-[#0E1629] py-10">
       <h2 className="text-[32px] font-bold text-white">측우기와 측우대</h2>
       <MainCanvas />
       <div className="flex text-white gap-3">

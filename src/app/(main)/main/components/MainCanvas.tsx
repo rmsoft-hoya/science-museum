@@ -24,14 +24,14 @@ const Model = ({ url, position }: any) => {
 
 export default function MainCanvas() {
   return (
-    <div className="w-full h-[380px] flex justify-center items-center">
-      <Canvas camera={{ position: [5, 10, 20], fov: 45, far: 1000, near: 1 }}>
+    <div className="w-full max-h-full h-[480px] flex justify-center items-center">
+      <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
         <ambientLight intensity={Math.PI / 2} />
         <Environment preset="city"></Environment>
         <Suspense fallback={<Loading />}>
           <Model url={model[0].url} position={model[0].position} />
         </Suspense>
-        <OrbitControls maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={20} />
+        <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={30} />
       </Canvas>
     </div>
   );
