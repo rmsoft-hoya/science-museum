@@ -79,9 +79,9 @@ export default function Interraction3D() {
         <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
           <ambientLight intensity={Math.PI / 2} />
           <Environment preset="city" />
-          <Suspense fallback={<Loading />}>
-            <Model />
-          </Suspense>
+          {/* <Suspense fallback={<Loading />}> */}
+          <Model />
+          {/* </Suspense> */}
           <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={30} />
         </Canvas>
       </div>

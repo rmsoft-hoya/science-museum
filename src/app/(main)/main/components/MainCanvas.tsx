@@ -27,9 +27,9 @@ export default function MainCanvas() {
       <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
         <ambientLight intensity={Math.PI / 2} />
         <Environment preset="city"></Environment>
-        <Suspense fallback={<Loading />}>
-          <Model url={model[0].url} position={model[0].position} />
-        </Suspense>
+        {/* <Suspense fallback={<Loading />}> */}
+        <Model url={model[0].url} position={model[0].position} />
+        {/* </Suspense> */}
         <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={30} />
       </Canvas>
     </div>
