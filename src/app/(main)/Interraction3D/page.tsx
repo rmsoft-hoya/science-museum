@@ -73,7 +73,7 @@ export default function Interraction3D() {
   const router = useRouter();
 
   return (
-    <div className="min-w-[360px] w-full h-screen flex flex-col justify-center items-center bg-[#0E1629] py-10">
+    <div className="min-w-[360px] w-full h-screen flex flex-col justify-center items-center bg-[#0E1629]">
       <h2 className="text-[32px] font-bold text-white">3D 인터랙션</h2>
       <div className="w-full max-h-full h-[480px] flex justify-center items-center">
         <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
@@ -86,7 +86,7 @@ export default function Interraction3D() {
         </Canvas>
       </div>
       <Button
-        className="w-[282px] h-[54px] p-0 rounded-full flex justify-center items-center py-[20px] text-base"
+        className="w-[282px] h-[54px] p-0 rounded-full flex justify-center items-center py-[20px] text-base bg-[rgba(255,255,255,0.1)]"
         onClick={() => {
           router.back();
         }}
