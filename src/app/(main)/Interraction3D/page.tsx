@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import { IntersectionEvent } from "@react-three/fiber/dist/declarations/src/core/events";
 
 const Model = () => {
-  const { scene, animations, nodes } = useGLTF("/3d/models/animation-model.glb", true);
+  const { scene, animations } = useGLTF("/3d/models/animation-model.glb", true);
   const { actions } = useAnimations(animations, scene);
 
   scene.position.set(0, -1, 0);
