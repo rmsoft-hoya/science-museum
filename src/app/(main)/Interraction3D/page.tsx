@@ -88,7 +88,7 @@ export default function Interraction3D() {
       <Button
         className="w-[282px] h-[54px] p-0 rounded-full flex justify-center items-center py-[20px] text-base bg-[rgba(255,255,255,0.1)]"
         onClick={() => {
-          router.back();
+          router.push("/");
         }}
       >
         닫기
