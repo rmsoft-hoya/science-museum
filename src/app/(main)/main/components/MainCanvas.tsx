@@ -26,6 +26,8 @@ export default function MainCanvas() {
     <div className="w-full max-h-full h-[480px] flex justify-center items-center">
       <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
         <ambientLight intensity={Math.PI / 2} />
+        <spotLight position={[100, 100, 100]} penumbra={1} decay={-0.2} intensity={Math.PI} />
+        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <Environment preset="city"></Environment>
         {/* <Suspense fallback={<Loading />}> */}
         <Model url={model[0].url} position={model[0].position} />
