@@ -19,7 +19,7 @@ const Mainpage = () => {
       <MainCanvas />
       <div className="flex text-white gap-3">
         <Button className="p-[10px] rounded-full text-base w-[136px] h-[54px] bg-[rgba(255,255,255,0.1)]" onClick={() => router.push("/Interraction3D")}>
-          3D 인터랙션dadaksjdnaksjdnaskjdn
+          3D 인터랙션
         </Button>
         <Button className="p-[10px] rounded-full text-base w-[136px] h-[54px] bg-[rgba(255,255,255,0.1)]" onClick={() => onClickDetailModal()}>
           유산 설명
