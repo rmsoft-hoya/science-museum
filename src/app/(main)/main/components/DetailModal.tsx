@@ -3,7 +3,6 @@
 import { useModal } from "@/app/hooks/useModal";
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
 import React from "react";
 
 const DetailModal = () => {

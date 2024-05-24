@@ -1,9 +1,8 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
-import Loading from "./Loading";
 
 const model = [{ name: "draco", url: "3d/models/preview-model.glb", position: [0, -1, 0] }];
 
@@ -29,9 +28,7 @@ export default function MainCanvas() {
         <spotLight position={[100, 100, 100]} penumbra={1} decay={-0.2} intensity={Math.PI} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <Environment preset="city"></Environment>
-        {/* <Suspense fallback={<Loading />}> */}
         <Model url={model[0].url} position={model[0].position} />
-        {/* </Suspense> */}
         <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={30} />
       </Canvas>
     </div>

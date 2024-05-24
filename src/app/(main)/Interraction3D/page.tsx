@@ -1,11 +1,10 @@
 "use client";
-import React, { Suspense, useCallback } from "react";
+import React, { useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useAnimations } from "@react-three/drei";
 import { useGLTF } from "@react-three/drei";
 import { Button } from "@/components/ui/button";
 import * as THREE from "three";
-import Loading from "../main/components/Loading";
 import { useRouter } from "next/navigation";
 import { IntersectionEvent } from "@react-three/fiber/dist/declarations/src/core/events";
 
@@ -82,9 +81,7 @@ export default function Interraction3D() {
           <ambientLight intensity={Math.PI / 2} />
           <spotLight position={[100, 100, 100]} penumbra={1} decay={-0.2} intensity={Math.PI} />
           <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-          {/* <Suspense fallback={<Loading />}> */}
           <Model />
-          {/* </Suspense> */}
           <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} minDistance={15} maxDistance={30} />
         </Canvas>
       </div>
