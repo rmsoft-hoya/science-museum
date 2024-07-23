@@ -73,7 +73,7 @@ export default function Interraction3D() {
 
   return (
     <div className="min-w-[360px] w-full h-screen flex flex-col justify-center items-center bg-[#0E1629]">
-      <h2 className="text-[32px] font-bold text-white">차세대 3D 뷰어</h2>
+      <h2 className="text-[32px] font-bold text-white">인터랙티브 3D 뷰어</h2>
       <div className="w-full max-h-full h-[480px] flex justify-center items-center">
         <Canvas camera={{ position: [5, 10, 20], fov: 60, far: 1000, near: 1 }}>
           <ambientLight intensity={Math.PI / 2} />
