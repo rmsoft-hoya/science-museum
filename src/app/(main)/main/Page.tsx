@@ -15,7 +15,7 @@ const Mainpage = () => {
 
   return (
     <div className="min-w-[360px] w-full h-screen flex flex-col justify-center  items-center bg-[#0E1629]">
-      <h2 className="text-[32px] font-bold text-white">차세대 3D 뷰어</h2>
+      <h2 className="text-[32px] font-bold text-white">인터랙티브 3D 뷰어</h2>
       <MainCanvas />
       <div className="flex text-white gap-3">
         <Button className="p-[10px] rounded-full text-base w-[136px] h-[54px] bg-[rgba(255,255,255,0.1)]" onClick={() => router.push("/Interraction3D")}>
